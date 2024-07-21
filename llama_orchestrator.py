@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from llama_agents import (
     AgentService,
     ControlPlaneServer,
@@ -16,7 +15,6 @@ from llama_index.llms.together import TogetherLLM
 from llama_index.llms.openai import OpenAI
 import streamlit as st
 
-load_dotenv()
 
 message_queue = SimpleMessageQueue()
 control_plane = ControlPlaneServer(

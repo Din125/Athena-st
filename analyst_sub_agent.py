@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 import os 
 from llama_index.llms.together import TogetherLLM
 from prompts import planner_prompt, analyst_prompt
@@ -8,7 +7,7 @@ from llama_index.llms.openai import OpenAI
 import streamlit as st
 
 
-load_dotenv()
+
 
 
 

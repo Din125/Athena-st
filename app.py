@@ -1,7 +1,6 @@
 import streamlit as st
 from llama_index.core.agent import ReActAgent
 from llama_index.core.tools import FunctionTool
-from dotenv import load_dotenv
 from prompts import main_agent_prompt
 import os
 from llama_index.core import PromptTemplate
@@ -11,7 +10,7 @@ from sql_agent import database_read_write_agent
 from llama_index.llms.openai import OpenAI
 import streamlit as st
 
-load_dotenv()
+
 
 def safe_call(input_dict):
     """
